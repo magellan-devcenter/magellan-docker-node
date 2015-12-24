@@ -2,7 +2,7 @@ FROM alpine:3.2
 
 ENV NODE_VERSION 5.3.0
 
-RUN apk add --update --virtual build-dependencies build-base linux-headers curl paxctl python \
+RUN apk add --update --virtual build-dependencies build-base linux-headers curl paxctl python binutils-gold \
   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.gz" \
   && tar -xzf "node-v$NODE_VERSION.tar.gz" \
   && cd "/node-v$NODE_VERSION" \
