@@ -1,6 +1,6 @@
-FROM alpine:3.2
+FROM alpine:3.3
 
-ENV NODE_VERSION 5.3.0
+ENV NODE_VERSION 5.4.0
 
 RUN apk add --update --virtual build-dependencies build-base linux-headers curl paxctl python binutils-gold \
   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.gz" \
