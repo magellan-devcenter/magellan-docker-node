@@ -1,4 +1,4 @@
-FROM magellan/node:5.4.1
+FROM magellan/node:5.5
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
